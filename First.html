@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="demo">
+        I am a div element
+    </div>
+    <button onclick="dwrite()">click</button>
+    <!-- <script src="./ShowTime.js"></script> -->
+    <script src="https://drive.google.com/drive/folders/17X-Kj0-k2nWqCX2foTQ_MYAUYA2kt72p"></script>
+    <script>
+
+
+        document.write(2 + 4 + "  write method example")
+        document.getElementById('demo').innerHTML = "OK Div text changed"
+        // window.alert(this.innerHTML) // undefined.
+        // window.alert(this.Text)//  function text()
+        dwrite = () => {
+            document.write("Now document writing after click ")
+            window.alert(" this is alert")
+            window.print()
+            console.log("I am printing at console")
+
+        }
+        let x, y, z;
+        let list = [1, 2, 3, 4];
+        let person = {
+            name: "ALi",
+            Age: "20"
+        }
+        let val = "123"
+        x = -67, y = 23, z;
+
+        console.log(isNaN(val)) // false
+        console.log(isNaN(x)) // false
+        console.log(isNaN(list)) // true
+        console.log(isNaN(person))// true
+        console.log(z + x); // NaN
+        console.log(typeof (z)); //undefined
+        console.log(typeof (x));
+        console.log(typeof (list));
+        console.log(typeof (person));
+        document.write(" the sum of two nos is " + (x + y))
+
+        timeup();
+
+    </script>
+</body>
+
+</html>
