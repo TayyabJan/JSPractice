@@ -2,13 +2,13 @@ let date = new Date();
         let timeObj = [
 
             {
-                year: date.getFullYear(),
-                month: date.getMonth(),
-                day: date.getDate(),
-                hour: date.getHours(),
-                minutes: date.getMinutes(),
-                seconds: date.getSeconds(),
-                miseconds: date.getMilliseconds()
+                year: "",
+                month:  "",
+                day:  "",
+                hour:  "",
+                minutes:  "",
+                seconds:  "",
+                miseconds:  ""
             },
             {
                 year: "",
@@ -20,6 +20,18 @@ let date = new Date();
                 miseconds: ""
             }
         ]
+
+        timestart= ()=>{
+            
+            timeObj[0].year = date.getFullYear();
+            timeObj[0].month = date.getMonth();
+            timeObj[0].day = date.getDate();
+            timeObj[0].hour = date.getHours();
+            timeObj[0].minutes = date.getMinutes();
+            timeObj[0].seconds = date.getSeconds();
+            timeObj[0].miseconds = date.getMilliseconds();
+            console.log(timeObj)
+        }
         
         timeup= ()=>{
             let lastdate = new Date();
